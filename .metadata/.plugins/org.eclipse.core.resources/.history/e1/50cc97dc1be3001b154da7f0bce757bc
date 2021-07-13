@@ -1,0 +1,12 @@
+package com.example.user;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserController {
+	
+	String processGet() {
+		System.out.println("called");
+		return "Hello";
+	}
+}

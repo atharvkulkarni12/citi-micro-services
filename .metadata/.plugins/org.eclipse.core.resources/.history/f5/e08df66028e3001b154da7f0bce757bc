@@ -1,0 +1,12 @@
+package com.example.user.services;
+
+import org.springframework.stereotype.Service;
+
+import com.example.user.entity.User;
+@Service
+public class UserService {
+
+	public String createUser(User user) {
+		return "from service layer";
+	}
+}

@@ -1,0 +1,10 @@
+package com.example.user.services;
+
+import com.example.user.entity.User;
+
+public class UserService {
+
+	public String createUser(User user) {
+		return "from service layer";
+	}
+}
