@@ -1,7 +1,11 @@
 package com.example.user;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,9 +19,13 @@ public class UserController {
 	UserService userService;
 	
 	@GetMapping("/user")
-	String processGet() {
-		System.out.println("called");
-		return "Hello";
+	List<User> processGet() {
+		return userService.getAllUsers();
+	}
+	
+	@GetMapping("/user/{id}")
+	Optional<User> getOne(@PathVariable("id") String id) {
+		return userService.getUser(id);
 	}
 	
 	@PostMapping("/user")

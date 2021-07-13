@@ -1,5 +1,8 @@
 package com.example.user.services;
 
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -21,5 +24,11 @@ public class UserService {
 				user.getEmail() , String.class);
 		System.out.println(response.getBody());
 		return savedUser.getId();
+	}
+	public List<User> getAllUsers() {
+		return userRepository.findAll();
+	}
+	public Optional<User> getUser(String id) {
+		return userRepository.findById(id);
 	}
 }
