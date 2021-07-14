@@ -1,7 +1,7 @@
 Day-3
 -------
 https://github.com/citiuspg/config-server-demo
-
+1. Create a properties file <service-name>-<profile>.properties in git properties repository.
 java -jar target/user-service-0.0.1-SNAPSHOT.jar --spring.cloud.config.profile=dev
 
 Day-2
