@@ -28,6 +28,10 @@ public class UserController {
 		return userService.getUser(id);
 	}
 	
+	@GetMapping("/user/firstname/{firstname}")
+	List<User> getByFirstName(@PathVariable("firstname") String firstname) {
+		return userService.getUserByFirstName(firstname);
+	}
 	@PostMapping("/user")
 	String createUser(@RequestBody User user) {
 		System.out.println(user.getFirstname());
