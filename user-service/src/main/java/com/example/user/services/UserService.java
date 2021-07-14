@@ -9,20 +9,18 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import com.example.user.entity.User;
+import com.example.user.feign.EmailServiceFeignClient;
 import com.example.user.repository.UserRepository;
 @Service
 public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	@Autowired
-	RestTemplate restTemplate;
+	EmailServiceFeignClient emailServiceFeignClient;
 	public String createUser(User user) {
 		User savedUser = userRepository.save(user);
-//		String request = "pariweshg@gmail.com";
-		ResponseEntity<String> response = restTemplate.postForEntity(
-				"http://localhost:8081/email", 
-				user.getEmail() , String.class);
-		System.out.println(response.getBody());
+		String response = emailServiceFeignClient.sendMail(user.getEmail());
+		System.out.println(response);
 		return savedUser.getId();
 	}
 	public List<User> getAllUsers() {
