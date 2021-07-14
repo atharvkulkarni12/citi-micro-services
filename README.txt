@@ -2,6 +2,9 @@ Day-3
 -------
 https://github.com/citiuspg/config-server-demo
 
+java -jar target/user-service-0.0.1-SNAPSHOT.jar --spring.cloud.config.profile=dev
+
+Day-2
 add to app.properties of email-service
 
 spring.application.name=email-service
