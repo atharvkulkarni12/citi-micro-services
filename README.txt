@@ -1,3 +1,33 @@
+Software’s
+
+1. JDK 11
+
+2. Chrome browser
+
+3. MongoDB : https://drive.google.com/file/d/1HDOC-sxbjr8I2k7qR9sE3vpPgZNTgPKu/view?usp=sharing
+
+4. maven
+
+5. winrar
+
+6. https://drive.google.com/file/d/1mKfOsXI1nZ_9a_cVDguZiB1XTyI8WvcC/view?usp=sharing
+
+7. https://drive.google.com/file/d/1V64qppj8YwlmYEhZps84YX02bXgt_icG/view?usp=sharing
+
+8. https://drive.google.com/file/d/1miSR-kFY4D6a_MW4XXh4bGgxexf7BsTz/view?usp=sharing
+
+9.  https://drive.google.com/file/d/1zj4H3mBBzLYKHLpuwlHdI5K44ZRGALhT/view?usp=sharing
+
+10. VSCode
+
+11. MySql 8 with workbench
+
+12. git client
+
+13. Postman
+
+
+
 Day-4
 ---------
 
