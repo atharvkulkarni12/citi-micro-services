@@ -26,7 +26,7 @@ Software’s
 
 13. Postman
 
-
+Minimum Projects: Eureka, Hystrix, Config, ELK, Feign, OAuth,
 
 Day-4
 ---------
