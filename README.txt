@@ -1,3 +1,5 @@
+https://microservices.io/patterns/client-side-discovery.html
+
 Software’s
 
 1. JDK 11
